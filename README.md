@@ -1,4 +1,4 @@
-# JFImagePickerController
+# JFImagePicker
 高性能多选图片库
 
 ###功能：
