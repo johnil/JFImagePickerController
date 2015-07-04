@@ -7,3 +7,7 @@
 预览已选照片
 
 针对超大图片优化
+
+#License
+
+JFImagePicker is released under the MIT license. See LICENSE for details.
