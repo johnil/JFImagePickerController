@@ -118,6 +118,7 @@
 	}
 	if ([preview.title isEqualToString:@"预览"]) {
 		preview.title = @"取消";
+        ASSETHELPER.previewIndex = 0;
 		collectionViewController = (JFImageCollectionViewController *)self.visibleViewController;
 		JFPhotoBrowserViewController *photoBrowser = [[JFPhotoBrowserViewController alloc] initWithPreview];
 		photoBrowser.delegate = self;
