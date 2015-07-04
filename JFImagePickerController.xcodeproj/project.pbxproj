@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4BC0E991B463C4E00162734 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BC0E981B463C4E00162734 /* main.m */; };
+		C4BC0E9C1B463C4E00162734 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BC0E9B1B463C4E00162734 /* AppDelegate.m */; };
+		C4BC0E9F1B463C4E00162734 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BC0E9E1B463C4E00162734 /* ViewController.m */; };
+		C4BC0EA21B463C4E00162734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4BC0EA01B463C4E00162734 /* Main.storyboard */; };
+		C4BC0EA41B463C4E00162734 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4BC0EA31B463C4E00162734 /* Images.xcassets */; };
+		C4BC0EA71B463C4E00162734 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4BC0EA51B463C4E00162734 /* LaunchScreen.xib */; };
+		C4BC0EB31B463C4F00162734 /* JFImagePickerControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BC0EB21B463C4F00162734 /* JFImagePickerControllerTests.m */; };
+		C4BC0EC91B463C8B00162734 /* JFImageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BC0EBE1B463C8B00162734 /* JFImageCollectionViewController.m */; };
+		C4BC0ECA1B463C8B00162734 /* JFImageGroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BC0EC01B463C8B00162734 /* JFImageGroupTableViewController.m */; };
+		C4BC0ECB1B463C8B00162734 /* JFImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BC0EC21B463C8B00162734 /* JFImagePickerController.m */; };
+		C4BC0ECC1B463C8B00162734 /* JFImagePickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BC0EC41B463C8B00162734 /* JFImagePickerViewCell.m */; };
+		C4BC0ECD1B463C8B00162734 /* JFPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BC0EC61B463C8B00162734 /* JFPhotoBrowserViewController.m */; };
+		C4BC0ECE1B463C8B00162734 /* JFAssetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BC0EC81B463C8B00162734 /* JFAssetHelper.m */; };
+		C4BC0ED11B463DA600162734 /* JFPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BC0ED01B463DA600162734 /* JFPhotoView.m */; };
+		C4F4C98B1B47A25E009FC9D7 /* JFImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F4C98A1B47A25E009FC9D7 /* JFImageManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4BC0EAD1B463C4F00162734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4BC0E8B1B463C4E00162734 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4BC0E921B463C4E00162734;
+			remoteInfo = JFImagePickerController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C4BC0E931B463C4E00162734 /* JFImagePickerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFImagePickerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4BC0E971B463C4E00162734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4BC0E981B463C4E00162734 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4BC0E9A1B463C4E00162734 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C4BC0E9B1B463C4E00162734 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C4BC0E9D1B463C4E00162734 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C4BC0E9E1B463C4E00162734 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C4BC0EA11B463C4E00162734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4BC0EA31B463C4E00162734 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C4BC0EA61B463C4E00162734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C4BC0EAC1B463C4F00162734 /* JFImagePickerControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFImagePickerControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4BC0EB11B463C4F00162734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4BC0EB21B463C4F00162734 /* JFImagePickerControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFImagePickerControllerTests.m; sourceTree = "<group>"; };
+		C4BC0EBD1B463C8B00162734 /* JFImageCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageCollectionViewController.h; sourceTree = "<group>"; };
+		C4BC0EBE1B463C8B00162734 /* JFImageCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImageCollectionViewController.m; sourceTree = "<group>"; };
+		C4BC0EBF1B463C8B00162734 /* JFImageGroupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageGroupTableViewController.h; sourceTree = "<group>"; };
+		C4BC0EC01B463C8B00162734 /* JFImageGroupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImageGroupTableViewController.m; sourceTree = "<group>"; };
+		C4BC0EC11B463C8B00162734 /* JFImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImagePickerController.h; sourceTree = "<group>"; };
+		C4BC0EC21B463C8B00162734 /* JFImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImagePickerController.m; sourceTree = "<group>"; };
+		C4BC0EC31B463C8B00162734 /* JFImagePickerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImagePickerViewCell.h; sourceTree = "<group>"; };
+		C4BC0EC41B463C8B00162734 /* JFImagePickerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImagePickerViewCell.m; sourceTree = "<group>"; };
+		C4BC0EC51B463C8B00162734 /* JFPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		C4BC0EC61B463C8B00162734 /* JFPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPhotoBrowserViewController.m; sourceTree = "<group>"; };
+		C4BC0EC71B463C8B00162734 /* JFAssetHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFAssetHelper.h; sourceTree = "<group>"; };
+		C4BC0EC81B463C8B00162734 /* JFAssetHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFAssetHelper.m; sourceTree = "<group>"; };
+		C4BC0ECF1B463DA600162734 /* JFPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPhotoView.h; sourceTree = "<group>"; };
+		C4BC0ED01B463DA600162734 /* JFPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPhotoView.m; sourceTree = "<group>"; };
+		C4F4C9891B47A25E009FC9D7 /* JFImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageManager.h; sourceTree = "<group>"; };
+		C4F4C98A1B47A25E009FC9D7 /* JFImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImageManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4BC0E901B463C4E00162734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4BC0EA91B463C4F00162734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4BC0E8A1B463C4E00162734 = {
+			isa = PBXGroup;
+			children = (
+				C4BC0E951B463C4E00162734 /* JFImagePickerController */,
+				C4BC0EAF1B463C4F00162734 /* JFImagePickerControllerTests */,
+				C4BC0E941B463C4E00162734 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4BC0E941B463C4E00162734 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4BC0E931B463C4E00162734 /* JFImagePickerController.app */,
+				C4BC0EAC1B463C4F00162734 /* JFImagePickerControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4BC0E951B463C4E00162734 /* JFImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				C4BC0EBC1B463C8B00162734 /* classes */,
+				C4BC0E9A1B463C4E00162734 /* AppDelegate.h */,
+				C4BC0E9B1B463C4E00162734 /* AppDelegate.m */,
+				C4BC0E9D1B463C4E00162734 /* ViewController.h */,
+				C4BC0E9E1B463C4E00162734 /* ViewController.m */,
+				C4BC0EA01B463C4E00162734 /* Main.storyboard */,
+				C4BC0EA31B463C4E00162734 /* Images.xcassets */,
+				C4BC0EA51B463C4E00162734 /* LaunchScreen.xib */,
+				C4BC0E961B463C4E00162734 /* Supporting Files */,
+			);
+			path = JFImagePickerController;
+			sourceTree = "<group>";
+		};
+		C4BC0E961B463C4E00162734 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4BC0E971B463C4E00162734 /* Info.plist */,
+				C4BC0E981B463C4E00162734 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4BC0EAF1B463C4F00162734 /* JFImagePickerControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4BC0EB21B463C4F00162734 /* JFImagePickerControllerTests.m */,
+				C4BC0EB01B463C4F00162734 /* Supporting Files */,
+			);
+			path = JFImagePickerControllerTests;
+			sourceTree = "<group>";
+		};
+		C4BC0EB01B463C4F00162734 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4BC0EB11B463C4F00162734 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4BC0EBC1B463C8B00162734 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				C4BC0EBD1B463C8B00162734 /* JFImageCollectionViewController.h */,
+				C4BC0EBE1B463C8B00162734 /* JFImageCollectionViewController.m */,
+				C4BC0EBF1B463C8B00162734 /* JFImageGroupTableViewController.h */,
+				C4BC0EC01B463C8B00162734 /* JFImageGroupTableViewController.m */,
+				C4BC0EC11B463C8B00162734 /* JFImagePickerController.h */,
+				C4BC0EC21B463C8B00162734 /* JFImagePickerController.m */,
+				C4BC0EC31B463C8B00162734 /* JFImagePickerViewCell.h */,
+				C4BC0EC41B463C8B00162734 /* JFImagePickerViewCell.m */,
+				C4BC0EC51B463C8B00162734 /* JFPhotoBrowserViewController.h */,
+				C4BC0EC61B463C8B00162734 /* JFPhotoBrowserViewController.m */,
+				C4BC0ECF1B463DA600162734 /* JFPhotoView.h */,
+				C4BC0ED01B463DA600162734 /* JFPhotoView.m */,
+				C4BC0EC71B463C8B00162734 /* JFAssetHelper.h */,
+				C4BC0EC81B463C8B00162734 /* JFAssetHelper.m */,
+				C4F4C9891B47A25E009FC9D7 /* JFImageManager.h */,
+				C4F4C98A1B47A25E009FC9D7 /* JFImageManager.m */,
+			);
+			name = classes;
+			path = JFImagePickerController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4BC0E921B463C4E00162734 /* JFImagePickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4BC0EB61B463C4F00162734 /* Build configuration list for PBXNativeTarget "JFImagePickerController" */;
+			buildPhases = (
+				C4BC0E8F1B463C4E00162734 /* Sources */,
+				C4BC0E901B463C4E00162734 /* Frameworks */,
+				C4BC0E911B463C4E00162734 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JFImagePickerController;
+			productName = JFImagePickerController;
+			productReference = C4BC0E931B463C4E00162734 /* JFImagePickerController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4BC0EAB1B463C4F00162734 /* JFImagePickerControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4BC0EB91B463C4F00162734 /* Build configuration list for PBXNativeTarget "JFImagePickerControllerTests" */;
+			buildPhases = (
+				C4BC0EA81B463C4F00162734 /* Sources */,
+				C4BC0EA91B463C4F00162734 /* Frameworks */,
+				C4BC0EAA1B463C4F00162734 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4BC0EAE1B463C4F00162734 /* PBXTargetDependency */,
+			);
+			name = JFImagePickerControllerTests;
+			productName = JFImagePickerControllerTests;
+			productReference = C4BC0EAC1B463C4F00162734 /* JFImagePickerControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4BC0E8B1B463C4E00162734 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Johnil;
+				TargetAttributes = {
+					C4BC0E921B463C4E00162734 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					C4BC0EAB1B463C4F00162734 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = C4BC0E921B463C4E00162734;
+					};
+				};
+			};
+			buildConfigurationList = C4BC0E8E1B463C4E00162734 /* Build configuration list for PBXProject "JFImagePickerController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4BC0E8A1B463C4E00162734;
+			productRefGroup = C4BC0E941B463C4E00162734 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4BC0E921B463C4E00162734 /* JFImagePickerController */,
+				C4BC0EAB1B463C4F00162734 /* JFImagePickerControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4BC0E911B463C4E00162734 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4BC0EA21B463C4E00162734 /* Main.storyboard in Resources */,
+				C4BC0EA71B463C4E00162734 /* LaunchScreen.xib in Resources */,
+				C4BC0EA41B463C4E00162734 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4BC0EAA1B463C4F00162734 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4BC0E8F1B463C4E00162734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4BC0ECE1B463C8B00162734 /* JFAssetHelper.m in Sources */,
+				C4F4C98B1B47A25E009FC9D7 /* JFImageManager.m in Sources */,
+				C4BC0ECA1B463C8B00162734 /* JFImageGroupTableViewController.m in Sources */,
+				C4BC0E9F1B463C4E00162734 /* ViewController.m in Sources */,
+				C4BC0ECC1B463C8B00162734 /* JFImagePickerViewCell.m in Sources */,
+				C4BC0EC91B463C8B00162734 /* JFImageCollectionViewController.m in Sources */,
+				C4BC0E9C1B463C4E00162734 /* AppDelegate.m in Sources */,
+				C4BC0ECD1B463C8B00162734 /* JFPhotoBrowserViewController.m in Sources */,
+				C4BC0ED11B463DA600162734 /* JFPhotoView.m in Sources */,
+				C4BC0ECB1B463C8B00162734 /* JFImagePickerController.m in Sources */,
+				C4BC0E991B463C4E00162734 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4BC0EA81B463C4F00162734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4BC0EB31B463C4F00162734 /* JFImagePickerControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4BC0EAE1B463C4F00162734 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4BC0E921B463C4E00162734 /* JFImagePickerController */;
+			targetProxy = C4BC0EAD1B463C4F00162734 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4BC0EA01B463C4E00162734 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4BC0EA11B463C4E00162734 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4BC0EA51B463C4E00162734 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4BC0EA61B463C4E00162734 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4BC0EB41B463C4F00162734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C4BC0EB51B463C4F00162734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4BC0EB71B463C4F00162734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JFImagePickerController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4BC0EB81B463C4F00162734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JFImagePickerController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C4BC0EBA1B463C4F00162734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JFImagePickerControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFImagePickerController.app/JFImagePickerController";
+			};
+			name = Debug;
+		};
+		C4BC0EBB1B463C4F00162734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JFImagePickerControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JFImagePickerController.app/JFImagePickerController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4BC0E8E1B463C4E00162734 /* Build configuration list for PBXProject "JFImagePickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4BC0EB41B463C4F00162734 /* Debug */,
+				C4BC0EB51B463C4F00162734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4BC0EB61B463C4F00162734 /* Build configuration list for PBXNativeTarget "JFImagePickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4BC0EB71B463C4F00162734 /* Debug */,
+				C4BC0EB81B463C4F00162734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4BC0EB91B463C4F00162734 /* Build configuration list for PBXNativeTarget "JFImagePickerControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4BC0EBA1B463C4F00162734 /* Debug */,
+				C4BC0EBB1B463C4F00162734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4BC0E8B1B463C4E00162734 /* Project object */;
+}
