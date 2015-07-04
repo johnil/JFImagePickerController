@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "JFImagePickerController.h"
 
-@interface ViewController () <JDImagePickerDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
+@interface ViewController () <JFImagePickerDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
 
 @end
 

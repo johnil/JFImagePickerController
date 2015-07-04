@@ -28,7 +28,7 @@
 
 @end
 
-@protocol JDImagePickerDelegate <NSObject>
+@protocol JFImagePickerDelegate <NSObject>
 
 - (void)imagePickerDidFinished:(JFImagePickerController *)picker;
 - (void)imagePickerDidCancel:(JFImagePickerController *)picker;
