@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JFAssetHelper.h"
+#import "JFImageManager.h"
 
 @interface JFImagePickerController : UINavigationController
 

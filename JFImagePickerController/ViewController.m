@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 #import "JFImagePickerController.h"
-#import "JFAssetHelper.h"
-#import "JFImageManager.h"
 
 @interface ViewController () <JDImagePickerDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
 
