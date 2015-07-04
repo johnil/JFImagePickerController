@@ -48,7 +48,7 @@ picker.pickerDelegate = self;
 }
 ```
 
-##### Step 4: Load UIImage
+##### Step 4: Load Thumb UIImage
 ```objective-c
 [[JFImageManager sharedManager] imageWithAsset:asset resultHandler:^(UIImage *result) {
     //do something
