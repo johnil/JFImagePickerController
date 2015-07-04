@@ -1,8 +1,7 @@
 # JFImagePicker
 高性能多选图片库
-![Screenshot 1](https://raw.github.com/johnil/JFImagePickerController/master/assets/screenshot1.png")
-![Screenshot 2](https://raw.github.com/johnil/JFImagePickerController/master/assets/screenshot2.png")
 
+<img src="https://raw.github.com/johnil/JFImagePickerController/master/assets/screenshot1.png" width="40%" height="auto">  <img src="https://raw.github.com/johnil/JFImagePickerController/master/assets/screenshot2.png" width="40%" height="auto">
 ###功能
 
 多选照片
