@@ -14,7 +14,7 @@
 
 ```ruby
 platform :ios, '7.0'
-pod 'JFImagePicker', :git => 'git://github.com/johnil/JFImagePickerController'
+pod 'JFImagePicker'
 ```
 
 ###How to Use
