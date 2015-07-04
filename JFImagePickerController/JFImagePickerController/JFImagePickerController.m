@@ -77,7 +77,7 @@
 	UIBarButtonItem *done = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStylePlain target:self action:@selector(choiceDone)];
 	[toolbar setItems:@[leftFix, preview, fix, selectNum, fix2, done, rightFix]];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeCount:) name:@"selectdPhotos" object:nil];
-	selectNum.title = [NSString stringWithFormat:@"%ld/9", ASSETHELPER.selectdPhotos.count];
+	selectNum.title = [NSString stringWithFormat:@"%ld/9", (unsigned long)ASSETHELPER.selectdPhotos.count];
 }
 
 - (void)setLeftTitle:(NSString *)title{
@@ -89,7 +89,7 @@
 }
 
 - (void)changeCount:(NSNotification *)notifi{
-	selectNum.title = [NSString stringWithFormat:@"%ld/9", ASSETHELPER.selectdPhotos.count];
+	selectNum.title = [NSString stringWithFormat:@"%ld/9", (unsigned long)ASSETHELPER.selectdPhotos.count];
 	if (![preview.title isEqualToString:@"取消"]) {
 		if (ASSETHELPER.selectdPhotos.count>0) {
 			preview.title = @"预览";

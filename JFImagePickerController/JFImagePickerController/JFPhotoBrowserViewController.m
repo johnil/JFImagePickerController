@@ -82,7 +82,7 @@
     BOOL hasItem = NO;
     NSInteger num = 0;
     for (NSDictionary *temp in ASSETHELPER.selectdPhotos) {
-        if ([[[temp allKeys] firstObject] isEqualToString:[NSString stringWithFormat:@"%ld-%ld",page, ASSETHELPER.currentGroupIndex]]) {
+        if ([[[temp allKeys] firstObject] isEqualToString:[NSString stringWithFormat:@"%ld-%ld",(long)page, (long)ASSETHELPER.currentGroupIndex]]) {
             num = [[[temp allValues] firstObject] intValue];
             hasItem = YES;
         }
@@ -165,7 +165,7 @@
 			if (ASSETHELPER.selectdPhotos.count>=9) {
 				return;
 			}
-			[ASSETHELPER.selectdPhotos addObject:@{[NSString stringWithFormat:@"%ld-%ld",page, ASSETHELPER.currentGroupIndex]: @(ASSETHELPER.selectdPhotos.count+1)}];
+			[ASSETHELPER.selectdPhotos addObject:@{[NSString stringWithFormat:@"%ld-%ld",(long)page, (long)ASSETHELPER.currentGroupIndex]: @(ASSETHELPER.selectdPhotos.count+1)}];
 
 			[ASSETHELPER.selectdAssets addObject:[ASSETHELPER getAssetAtIndex:page]];
 
@@ -180,7 +180,7 @@
 			NSInteger index = 0;
 			NSInteger num = 0;
 			for (NSDictionary *dict in ASSETHELPER.selectdPhotos) {
-				if ([[[dict allKeys] firstObject] isEqualToString:[NSString stringWithFormat:@"%ld-%ld",page, ASSETHELPER.currentGroupIndex]]) {
+				if ([[[dict allKeys] firstObject] isEqualToString:[NSString stringWithFormat:@"%ld-%ld",(long)page, (long)ASSETHELPER.currentGroupIndex]]) {
 					index = [ASSETHELPER.selectdPhotos indexOfObject:dict];
 					num = [[[dict allValues] firstObject] intValue];
 				}
@@ -248,7 +248,7 @@
 		BOOL hasItem = NO;
 		NSInteger num = 0;
 		for (NSDictionary *temp in ASSETHELPER.selectdPhotos) {
-			if ([[[temp allKeys] firstObject] isEqualToString:[NSString stringWithFormat:@"%ld-%ld",page, ASSETHELPER.currentGroupIndex]]) {
+			if ([[[temp allKeys] firstObject] isEqualToString:[NSString stringWithFormat:@"%ld-%ld",(long)page, (long)ASSETHELPER.currentGroupIndex]]) {
 				num = [[[temp allValues] firstObject] intValue];
 				hasItem = YES;
 			}

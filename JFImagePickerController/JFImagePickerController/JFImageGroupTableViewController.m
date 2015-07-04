@@ -79,7 +79,7 @@
 	ALAssetsGroup *group = [ASSETHELPER getGroupAtIndex:indexPath.row];
 	cell.imageView.image = [UIImage imageWithCGImage:[group posterImage]];
 	cell.textLabel.text = [group valueForProperty:ALAssetsGroupPropertyName];
-	cell.detailTextLabel.text = [NSString stringWithFormat:@"%ld", [group numberOfAssets]];
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"%ld", (long)[group numberOfAssets]];
 	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }

@@ -68,7 +68,7 @@
 
 - (void)reloadNum:(NSNotification *)notifi{
 	for (NSDictionary *temp in ASSETHELPER.selectdPhotos) {
-		if ([[[temp allKeys] firstObject] isEqualToString:[NSString stringWithFormat:@"%ld-%ld", _indexPath.row, ASSETHELPER.currentGroupIndex]]) {
+		if ([[[temp allKeys] firstObject] isEqualToString:[NSString stringWithFormat:@"%ld-%ld", (long)_indexPath.row, (long)ASSETHELPER.currentGroupIndex]]) {
 			_numOfSelect.text = [[[temp allValues] firstObject] stringValue];
 		}
 	}
@@ -81,7 +81,7 @@
 			return;
 		}
 		if (self.numOfSelect==nil) {
-			[ASSETHELPER.selectdPhotos addObject:@{[NSString stringWithFormat:@"%ld-%ld",_indexPath.row, ASSETHELPER.currentGroupIndex]: @(ASSETHELPER.selectdPhotos.count+1)}];
+			[ASSETHELPER.selectdPhotos addObject:@{[NSString stringWithFormat:@"%ld-%ld",(long)_indexPath.row, (long)ASSETHELPER.currentGroupIndex]: @(ASSETHELPER.selectdPhotos.count+1)}];
 
 			[ASSETHELPER.selectdAssets addObject:[ASSETHELPER getAssetAtIndex:_indexPath.row]];
 
@@ -90,7 +90,7 @@
 			NSInteger index = 0;
 			NSInteger num = 0;
 			for (NSDictionary *dict in ASSETHELPER.selectdPhotos) {
-				if ([[[dict allKeys] firstObject] isEqualToString:[NSString stringWithFormat:@"%ld-%ld",_indexPath.row, ASSETHELPER.currentGroupIndex]]) {
+				if ([[[dict allKeys] firstObject] isEqualToString:[NSString stringWithFormat:@"%ld-%ld",(long)_indexPath.row, (long)ASSETHELPER.currentGroupIndex]]) {
 					index = [ASSETHELPER.selectdPhotos indexOfObject:dict];
 					num = [[[dict allValues] firstObject] intValue];
 				}
