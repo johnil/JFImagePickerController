@@ -20,6 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.extendedLayoutIncludesOpaqueBars = YES;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.edgesForExtendedLayout = UIRectEdgeAll;
+
     photos = [[NSMutableArray alloc] init];
     
     UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(pickPhotos)];
@@ -69,7 +73,7 @@
         [cell addGestureRecognizer:tap];
     }
     cell.tag = indexPath.item;
-    [[JFImageManager sharedManager] imageWithAsset:asset resultHandler:^(UIImage *result) {
+    [[JFImageManager sharedManager] thumbWithAsset:asset resultHandler:^(UIImage *result) {
         if (cell.tag==indexPath.item) {
             imgView.image = result;
         }

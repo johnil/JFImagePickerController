@@ -109,7 +109,7 @@
 	cell.indexPath = indexPath;
     cell.tag = indexPath.item;
     ALAsset *asset = [ASSETHELPER getAssetAtIndex:indexPath.row];
-    [[JFImageManager sharedManager] imageWithAsset:asset resultHandler:^(UIImage *result) {
+    [[JFImageManager sharedManager] thumbWithAsset:asset resultHandler:^(UIImage *result) {
         if (cell.tag==indexPath.item) {
             cell.imageView.image = result;
         }

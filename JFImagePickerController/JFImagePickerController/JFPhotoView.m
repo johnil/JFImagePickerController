@@ -183,7 +183,7 @@
     _imageView.image = [ASSETHELPER getImageFromAsset:asset type:ASSET_PHOTO_ASPECT_THUMBNAIL];
     [self progressImage];
     NSInteger flag = self.tag;
-    [[JFImageManager sharedManager] imageWithSclaedAsset:asset resultHandler:^(CGImageRef imageRef, BOOL longImage) {
+    [[JFImageManager sharedManager] imageWithAsset:asset resultHandler:^(CGImageRef imageRef, BOOL longImage) {
         if (flag==self.tag) {
             if (longImage) {
                 originSize = CGSizeMake(CGImageGetWidth(imageRef), CGImageGetHeight(imageRef));
