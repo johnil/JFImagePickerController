@@ -13,9 +13,9 @@
 + (JFImageManager *)sharedManager;
 - (void)clearMem;
 - (void)startCahcePhotoThumbWithSize:(CGSize)size;
-- (void)imageWithAsset:(ALAsset *)asset
+- (void)thumbWithAsset:(ALAsset *)asset
          resultHandler:(void (^)(UIImage *result))resultHandler;
-- (void)imageWithSclaedAsset:(ALAsset *)asset
-               resultHandler:(void (^)(CGImageRef imageRef, BOOL longImage))resultHandler;
+- (void)imageWithAsset:(ALAsset *)asset
+         resultHandler:(void (^)(CGImageRef imageRef, BOOL longImage))resultHandler;
 
 @end

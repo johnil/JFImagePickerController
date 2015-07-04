@@ -105,7 +105,7 @@
 
 }
 
-- (void)imageWithAsset:(ALAsset *)asset
+- (void)thumbWithAsset:(ALAsset *)asset
          resultHandler:(void (^)(UIImage *result))resultHandler{
     if (!resultHandler) {
         return;
@@ -132,8 +132,8 @@
 
 }
 
-- (void)imageWithSclaedAsset:(ALAsset *)asset
-               resultHandler:(void (^)(CGImageRef imageRef, BOOL longImage))resultHandler{
+- (void)imageWithAsset:(ALAsset *)asset
+         resultHandler:(void (^)(CGImageRef imageRef, BOOL longImage))resultHandler {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         CGSize dimensions = asset.defaultRepresentation.dimensions;
         CGSize screenSize = [UIScreen mainScreen].bounds.size;

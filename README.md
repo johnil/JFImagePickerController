@@ -19,7 +19,7 @@ pod 'JFImagePicker', :git => 'git://github.com/johnil/JFImagePickerController'
 
 ###How to Use
 
-##### Step 1: Import
+##### Import
 ```objective-c
 #import "JFImagePickerController.h"
 
@@ -29,14 +29,14 @@ pod 'JFImagePicker', :git => 'git://github.com/johnil/JFImagePickerController'
 
 ```
 
-##### Step 2: Load JFImagePicker
+##### Load JFImagePicker
 ```objective-c
 JFImagePickerController *picker = [[JFImagePickerController alloc] initWithPreviewIndex:temp.tag];
 picker.pickerDelegate = self;
 [self presentViewController:picker animated:YES completion:nil];
 ```
 
-##### Step 3: Delegate Method
+##### Delegate Method
 ```objective-c
 - (void)imagePickerDidFinished:(JFImagePickerController *)picker{ 
 	//picker.assets is all choices photo
@@ -48,14 +48,21 @@ picker.pickerDelegate = self;
 }
 ```
 
-##### Step 4: Load Thumb UIImage
+##### Load Thumb UIImage
+```objective-c
+[[JFImageManager sharedManager] thumbWithAsset:asset resultHandler:^(UIImage *result) {
+    //do something
+}];
+```
+
+##### Load UIImage for best size
 ```objective-c
 [[JFImageManager sharedManager] imageWithAsset:asset resultHandler:^(UIImage *result) {
     //do something
 }];
 ```
 
-##### Step 5: clear
+##### clear
 ```objective-c
 [JFImagePickerController clear];  //clear datas
 ```
