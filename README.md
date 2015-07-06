@@ -31,7 +31,7 @@ pod 'JFImagePicker'
 
 ##### Load JFImagePicker
 ```objective-c
-JFImagePickerController *picker = [[JFImagePickerController alloc] initWithPreviewIndex:temp.tag];
+JFImagePickerController *picker = [[JFImagePickerController alloc] initWithRootViewController:nil];
 picker.pickerDelegate = self;
 [self presentViewController:picker animated:YES completion:nil];
 ```
