@@ -10,6 +10,8 @@
 
 @interface JFImageCollectionViewController : UIViewController
 
+@property (nonatomic, assign) NSInteger maxCount;
+
 - (UICollectionView *)collectionView;
 
 @end
