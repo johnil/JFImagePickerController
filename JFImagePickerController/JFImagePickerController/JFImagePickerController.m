@@ -72,12 +72,13 @@
 	UIBarButtonItem *rightFix = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
 	preview = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(preview)];
 	UIBarButtonItem *fix = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-	selectNum = [[UIBarButtonItem alloc] initWithTitle:@"0/9" style:UIBarButtonItemStylePlain target:nil action:nil];
+	selectNum = [[UIBarButtonItem alloc] initWithTitle:[NSString stringWithFormat:@"0/%ld", (unsigned long)ASSETHELPER.maxImagesCount] style:UIBarButtonItemStylePlain target:nil action:nil];
 	UIBarButtonItem *fix2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
 	UIBarButtonItem *done = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStylePlain target:self action:@selector(choiceDone)];
 	[toolbar setItems:@[leftFix, preview, fix, selectNum, fix2, done, rightFix]];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeCount:) name:@"selectdPhotos" object:nil];
-	selectNum.title = [NSString stringWithFormat:@"%ld/9", (unsigned long)ASSETHELPER.selectdPhotos.count];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeCount:) name:@"maxImagesCount" object:nil];
+	selectNum.title = [NSString stringWithFormat:@"%ld/%ld", (unsigned long)ASSETHELPER.selectdPhotos.count, (unsigned long)ASSETHELPER.maxImagesCount];
 }
 
 - (void)setLeftTitle:(NSString *)title{
@@ -89,7 +90,7 @@
 }
 
 - (void)changeCount:(NSNotification *)notifi{
-	selectNum.title = [NSString stringWithFormat:@"%ld/9", (unsigned long)ASSETHELPER.selectdPhotos.count];
+	selectNum.title = [NSString stringWithFormat:@"%ld/%ld", (unsigned long)ASSETHELPER.selectdPhotos.count, (unsigned long)ASSETHELPER.maxImagesCount];
 	if (![preview.title isEqualToString:@"取消"]) {
 		if (ASSETHELPER.selectdPhotos.count>0) {
 			preview.title = @"预览";
@@ -182,6 +183,12 @@
 
 - (BOOL)shouldAutorotate{
     return NO;
+}
+
+- (void)setMaxImagesCount:(NSUInteger)maxImagesCount {
+    _maxImagesCount = maxImagesCount;
+    [ASSETHELPER setMaxImagesCount:maxImagesCount];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"maxImagesCount" object:nil];
 }
 
 @end

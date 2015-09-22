@@ -335,4 +335,11 @@
     return _assetGroups[nIndex];
 }
 
+- (NSUInteger)maxImagesCount {
+    if (!_maxImagesCount) {
+        _maxImagesCount = 9;
+    }
+    return _maxImagesCount;
+}
+
 @end
