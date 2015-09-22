@@ -32,6 +32,7 @@
 @property (nonatomic, strong)   NSMutableArray			*defaultAssets;
 @property (nonatomic, strong)   NSString				*originStr;
 @property (nonatomic, strong)	ALAsset					*selectdAsset;
+@property (nonatomic, assign)   NSUInteger              maxImagesCount;
 
 + (JFAssetHelper *)sharedAssetHelper;
 

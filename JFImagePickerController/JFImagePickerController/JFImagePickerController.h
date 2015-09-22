@@ -14,6 +14,7 @@
 
 - (JFImagePickerController *)initWithPreviewIndex:(NSInteger)index;
 @property (nonatomic, weak) id pickerDelegate;
+@property (nonatomic, assign) NSUInteger maxImagesCount;
 
 /**
  当退出编辑模式时需调用clear，用来清理内存，已选择照片的缓存
